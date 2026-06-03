@@ -1,11 +1,33 @@
 import Card from "./Card";
+import { easeOut, motion } from "framer-motion";
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+const fadeRight = {
+  hidden: {
+    opacity: 0,
+    x: 50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+};
 function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-24">
-      <div className="max-w-7xl mx-auto px-6 w-full">
+      <motion.div className="max-w-7xl mx-auto px-6 w-full "    initial={{opacity: 0,x: 50,}}animate={{opacity: 1,x: 0,}}transition={{duration: 0.8,delay: 0.3,ease: "easeOut",}}whileHover={{y: -4,}}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          <div>
+          <motion.div variants={fadeUp} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut }} className="text-center lg:text-left">
             <p className="text-lg md:text-xl tracking-widest uppercase text-[var(--accent)] mb-4">
               Aspiring Software Developer
             </p>
@@ -33,7 +55,13 @@ function Hero() {
                 View Projects
               </button>
 
-              <button
+              <motion.button
+                whileHover={{
+                  y: -2,
+                }}
+                whileTap={{
+                  scale: 0.98,
+                }}
                 className="
                   px-8 py-3
                   rounded-lg
@@ -43,16 +71,16 @@ function Hero() {
                 "
               >
                 Contact Me
-              </button>
+              </motion.button>
             </div>
-          </div>
-
-          <div className="hidden lg:flex justify-center">
+          </motion.div>
+          {/*Right side */}
+          <motion.div className="hidden lg:flex justify-center" variants={fadeRight} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut, delay:0.3 }}>
             <Card />
-          </div>
+          </motion.div>
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
