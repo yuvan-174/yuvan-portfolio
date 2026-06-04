@@ -1,5 +1,6 @@
-import Card from "./Card";
 import { easeOut, motion } from "framer-motion";
+import Card from "./Card";
+
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -21,13 +22,26 @@ const fadeRight = {
     x: 0,
   },
 };
+
 function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-24">
-      <motion.div className="max-w-7xl mx-auto px-6 w-full "    initial={{opacity: 0,x: 50,}}animate={{opacity: 1,x: 0,}}transition={{duration: 0.8,delay: 0.3,ease: "easeOut",}}>
+      <motion.div
+        className="max-w-7xl mx-auto px-6 w-full"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          <motion.div variants={fadeUp} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut }} className="text-center lg:text-left">
+          
+          {/* Left side */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: easeOut }}
+            className="text-center lg:text-left"
+          >
             <p className="text-lg md:text-xl tracking-widest uppercase text-[var(--accent)] mb-4">
               Aspiring Software Developer
             </p>
@@ -65,16 +79,23 @@ function Hero() {
                   border border-[var(--accent)]
                   transition-all duration-300
                   hover:bg-[var(--accent)]
-                ">
+                "
+              >
                 Contact Me
               </motion.button>
             </div>
           </motion.div>
-          {/*Right side */}
-          <motion.div className="flex justify-center" variants={fadeRight} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut, delay:0.3 }}>
+
+          {/* Right side */}
+          <motion.div
+            className="flex justify-center"
+            variants={fadeRight}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.8, ease: easeOut, delay: 0.3 }}
+          >
             <Card />
           </motion.div>
-
         </div>
       </motion.div>
     </section>

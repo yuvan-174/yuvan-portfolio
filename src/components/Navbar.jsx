@@ -5,7 +5,7 @@ function Navbar() {
         fixed top-0 left-0 right-0 z-50
         bg-[var(--background)]/70
         backdrop-blur-md
-        border-b border-[var(--accent)]/20
+        border-b border-[#D2AD89]
         transition-all duration-300 ease-out
       ">
       <div
@@ -35,7 +35,7 @@ function Navbar() {
             href="#about"
             className="hover:text-[var(--accent)] transition-colors duration-300"
           >
-            About
+            Journey
           </a>
           
           <a

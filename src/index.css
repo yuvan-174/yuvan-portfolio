@@ -2,18 +2,26 @@
 @import "tailwindcss";
 
 :root {
-    --background: #171A26;
-    --text: #f7edf0;
-    --accent: #A3703E;
+  --background: #0B0E14; 
+  --text: #F7EDF0;
+  --accent: #A3703E;
+  --glow-primary: rgba(217, 164, 65, 0.12);
+  --glow-secondary: rgba(217, 164, 65, 0.06);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   color: var(--text);
   font-family: "Space Grotesk", sans-serif;
-  position: relative;
-}
-html {
-    scroll-behavior: smooth;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 75% 40%, var(--glow-primary) 0%, transparent 45%),
+    radial-gradient(circle at 20% 80%, var(--glow-secondary) 0%, transparent 50%);
+  background-attachment: fixed;
 }
 body::before {
   content: "";
