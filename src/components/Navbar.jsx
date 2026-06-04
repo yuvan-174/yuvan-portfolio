@@ -37,6 +37,13 @@ function Navbar() {
           >
             About
           </a>
+          
+          <a
+            href="#skills"
+            className="hover:text-[var(--accent)] transition-colors duration-300"
+          >
+            Skills
+          </a>
 
           <a
             href="#projects"

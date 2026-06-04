@@ -1,6 +1,6 @@
 function Card(){
     return(
-        <div className=" w-3xl bg-[#262B40]/3 border border-[#D2AD89] rounded-md overflow-hidden shadow-xl px-1">
+        <div className="w-full max-w-lg bg-[#262B40]/3 border border-[#D2AD89] rounded-md overflow-hidden shadow-xl px-1">
             <div className="flex justify-between items-center px-6 py-4 border-b border-[#855C32]/20">
                 <div className="flex gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#D9A441]" />
@@ -15,7 +15,7 @@ function Card(){
                 <div className="border-l-2 border-[#855C32] pl-6 space-y-2 mb-10">
                 <div className="flex gap-2">
                     <span className="text-[#F7EDF0]/40">01</span>
-                    <p className="font-mono text-lg">
+                    <p className="font-mono text-sm md:text-lg">
                     <span className="text-[#D9A441]">const</span>{" "}
                     focus = "reliable systems";
                     </p>
@@ -23,7 +23,7 @@ function Card(){
 
                 <div className="flex gap-2">
                     <span className="text-[#F7EDF0]/40">02</span>
-                    <p className="font-mono text-lg">
+                    <p className="font-mono text-sm md:text-sm md:text-lg">
                     <span className="text-[#D9A441]">let</span>{" "}
                     curiosity = "always on";
                     </p>
@@ -31,15 +31,15 @@ function Card(){
 
                 <div className="flex gap-2">
                     <span className="text-[#F7EDF0]/40">03</span>
-                    <p className="font-mono text-lg">
+                    <p className="font-mono text-sm md:text-sm md:text-lg">
                     <span className="text-[#D9A441]">var</span>{" "}
                     build(projects).with(intent);
                     </p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 mb-6">
-                <div className="border border-[#855C32]/15 p-4">
+            <div className="grid grid-cols-2 gap-3 mb-4">
+                <div className="border border-[#855C32] p-4">
                     <p className="text-[#F7EDF0]/40 mb-2">
                     Current mode
                     </p>
@@ -49,8 +49,8 @@ function Card(){
                     </h3>
                 </div>
 
-                <div className="border border-[#855C32]/15 p-6">
-                    <p className="text-[#F7EDF0]/40 mb-4">
+                <div className="border border-[#855C32] p-4">
+                    <p className="text-[#F7EDF0]/40 mb-2">
                     Signal
                     </p>
 
@@ -60,11 +60,11 @@ function Card(){
                 </div>
             </div>
 
-            <div className="border border-dashed border-[#855C32]/20 p-6">
+            <div className="border border-dashed border-[#855C32] p-6">
                 <p className="text-[#D9A441] tracking-[0.25em] text-sm uppercase mb-6">
                     Desk Note
                 </p>
-                <p className="text-[#F7EDF0]/75 leading-relaxed text-lg">
+                <p className="text-[#F7EDF0]/75 leading-relaxed text-sm md:text-lg">
                     I like projects that force me to understand
                     the system beneath the interface.
                 </p>

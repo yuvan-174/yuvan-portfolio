@@ -24,15 +24,15 @@ const fadeRight = {
 function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-24">
-      <motion.div className="max-w-7xl mx-auto px-6 w-full "    initial={{opacity: 0,x: 50,}}animate={{opacity: 1,x: 0,}}transition={{duration: 0.8,delay: 0.3,ease: "easeOut",}}whileHover={{y: -4,}}>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <motion.div className="max-w-7xl mx-auto px-6 w-full "    initial={{opacity: 0,x: 50,}}animate={{opacity: 1,x: 0,}}transition={{duration: 0.8,delay: 0.3,ease: "easeOut",}}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <motion.div variants={fadeUp} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut }} className="text-center lg:text-left">
             <p className="text-lg md:text-xl tracking-widest uppercase text-[var(--accent)] mb-4">
               Aspiring Software Developer
             </p>
 
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-none mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none mb-6">
               Yuvan <span className="text-[var(--accent)]">Sundar</span>
             </h1>
 
@@ -42,7 +42,7 @@ function Hero() {
               a software engineer.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start transition-all duration-300 ease-out">
               <button
                 className="
                   px-8 py-3
@@ -56,9 +56,6 @@ function Hero() {
               </button>
 
               <motion.button
-                whileHover={{
-                  y: -2,
-                }}
                 whileTap={{
                   scale: 0.98,
                 }}
@@ -68,14 +65,13 @@ function Hero() {
                   border border-[var(--accent)]
                   transition-all duration-300
                   hover:bg-[var(--accent)]
-                "
-              >
+                ">
                 Contact Me
               </motion.button>
             </div>
           </motion.div>
           {/*Right side */}
-          <motion.div className="hidden lg:flex justify-center" variants={fadeRight} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut, delay:0.3 }}>
+          <motion.div className="flex justify-center" variants={fadeRight} initial="hidden" animate="visible" transition={{ duration: 0.8, ease:easeOut, delay:0.3 }}>
             <Card />
           </motion.div>
 
