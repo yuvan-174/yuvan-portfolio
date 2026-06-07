@@ -23,6 +23,7 @@ function Navbar() {
             transition-colors duration-300
           ">
             <span className="text-[var(--text)]">YS</span>
+            <span className="text-[var(--accent)]">.</span>
         </a>
 
         <nav
