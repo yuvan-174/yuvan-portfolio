@@ -6,7 +6,7 @@ function Timeline() {
   const active = timelineData[activeStage];
 
   return (
-    <section id="journey" className="min-h-screen py-24">
+    <section id="journey" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-20">
           {/* Left Side */}

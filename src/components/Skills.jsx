@@ -1,8 +1,8 @@
 function Skills()
 {
     return(
-        <div id="skills" className="skills flex flex-col items-center gap-5 p-10">
-            <h2 className="text-3xl font-bold text-white">Skills</h2>
+        <div  id="skills"className="border border-[#D2AD89] rounded-lg p-8 max-w-4xl mx-auto mt-16 mb-16">
+            <h1 className="skills-heading">Skills</h1>
         </div>
     );
 }
