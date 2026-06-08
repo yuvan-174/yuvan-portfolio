@@ -1,6 +1,6 @@
 function Card() {
   return (
-    <div className="w-full max-w-lg bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden shadow-2xl px-1 relative">
+    <div className="w-full max-w-lg bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-lg overflow-hidden shadow-2xl px-1 relative">
       <div className="flex justify-between items-center px-6 py-4 border-b border-white/10">
         <div className="flex gap-2">
           <div className="w-2 h-2 rounded-full bg-[#D9A441]" />

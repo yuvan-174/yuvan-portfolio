@@ -25,7 +25,7 @@ function Timeline() {
           </div>
 
           <div
-            className="rounded-2xl border border-white/10 overflow-hidden"
+            className="rounded-lg border border-white/10 overflow-hidden"
             style={{
               background: "rgba(255,255,255,0.02)",
               backdropFilter: "blur(8px)",
@@ -39,7 +39,7 @@ function Timeline() {
                     key={item.id}
                     onClick={() => setActiveStage(index)}
                     className={`
-                      w-full text-left rounded-xl px-4 py-4
+                      w-full text-left rounded-lg px-4 py-4
                       border transition-all duration-300 cursor-pointer
                       ${
                         activeStage === index
