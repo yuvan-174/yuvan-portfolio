@@ -14,13 +14,11 @@ function Timeline() {
             <p className="uppercase tracking-[0.25em] text-[var(--accent)] mb-4">
               Journey Timeline
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
               From learning code to building real solutions.
             </h2>
             <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
-              Every stage taught me something different — not just new
-              technologies, but new ways of thinking about problems, systems,
-              and software.
+              Each stage of my degree hasn't just introduced new tech stacks—it has completely changed how I break down problems and design systems.
             </p>
           </div>
 

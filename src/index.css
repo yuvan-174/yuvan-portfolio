@@ -18,23 +18,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  background-image:
-    radial-gradient(
-      circle at 15% 35%,
-      rgba(163, 112, 62, 0.18) 0%,
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 85% 65%,
-      rgba(163, 112, 62, 0.1) 0%,
-      transparent 45%
-    );
-
-  background-attachment: fixed;
 }
 
 /* Technical Grid */
-
+/* 
 body::before {
   content: "";
   position: fixed;
@@ -55,11 +42,11 @@ body::before {
 
   pointer-events: none;
   z-index: -1;
-}
+} */
 
 /* Subtle vignette */
 
-body::after {
+/* body::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -73,4 +60,4 @@ body::after {
 
   pointer-events: none;
   z-index: -1;
-}
+} */

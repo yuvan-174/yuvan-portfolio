@@ -23,7 +23,7 @@ const skillsData = [
   {
     title: "Frontend",
     icon: FaLaptopCode,
-    description: "Responsive UIs and performant client-side application state.",
+    description: "Building clean, interactive user interfaces and managing how the application feels in the browser.",
     technologies: [
       { name: "React", icon: FaReact, color: "#61DAFB" },
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
@@ -36,7 +36,7 @@ const skillsData = [
   {
     title: "Backend",
     icon: FaServer,
-    description: "Secure application server logic and robust API endpoint configurations.",
+    description: "Writing the core logic, handling databases, and building the APIs that bridge the front-end to the heavy lifting behind the scenes.",
     technologies: [
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "Flask", icon: BiLogoFlask, color: "#E0E0E0" },
@@ -46,7 +46,7 @@ const skillsData = [
   {
     title: "Database",
     icon: FaDatabase,
-    description: "Structured information architectures and optimized query processing workflows.",
+    description: "Designing the data foundations and schemas that keep applications running smoothly.",
     technologies: [
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
     ],
@@ -55,7 +55,7 @@ const skillsData = [
   {
     title: "Tools",
     icon: FaTools,
-    description: "Version control systems, code environments, and build utilities.",
+    description: "The daily essentials I use to track my code, catch bugs, and ship projects.",
     technologies: [
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#FFFFFF" },

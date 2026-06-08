@@ -26,20 +26,7 @@ const fadeRight = {
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24">
-      <div
-        className="
-          absolute
-          left-[-250px]
-          top-1/2
-          -translate-y-1/2
-          w-[700px]
-          h-[700px]
-          bg-[var(--accent)]/10
-          blur-[180px]
-          rounded-full
-          pointer-events-none
-        "
-      />
+      <div/>
 
       <motion.div
         className="max-w-7xl mx-auto px-6 w-full relative z-10"
@@ -72,9 +59,7 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-[#F7EDF0]/80 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10">
-              I build modern web applications, explore software engineering
-              concepts, and continuously learn new technologies while growing
-              into a software engineer.
+              I am a computer science student building modern web applications and exploring the systems beneath them. I focus on bridging clean front-end interfaces with robust backend logic.
             </p>
 
             <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start">

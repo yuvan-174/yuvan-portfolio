@@ -33,8 +33,8 @@ function Card() {
           <div className="flex gap-2">
             <span className="text-[#F7EDF0]/40">03</span>
             <p className="font-mono text-sm md:text-lg">
-              <span className="text-[#D9A441]">var</span>{" "}
-              build(projects).with(intent);
+              <span className="text-[#D9A441]">const</span>{" "}
+              buildProjects = {"{"}with: "intent"{"}"};
             </p>
           </div>
         </div>
