@@ -8,7 +8,7 @@ function Skills() {
 
         {/* Section Header */}
         <div className="mb-10">
-          <p className="uppercase tracking-[0.25em] text-[var(--accent)] text-sm font-medium mb-4">
+          <p className="uppercase tracking-[0.25em] text-[var(--accent)] font-bold mb-4 ">
             Current Stack
           </p>
 
@@ -27,7 +27,7 @@ function Skills() {
           className="
             border border-[var(--accent)]/20
             rounded-lg
-            p-6 md:p-10
+            p-4 md:p-10
             bg-[#121318]/80
             backdrop-blur-sm
             shadow-[0_0_60px_rgba(212,175,55,0.02)]
@@ -35,7 +35,7 @@ function Skills() {
         >
 
           {/* Terminal Header */}
-          <div className="flex items-center gap-2 pb-6 mb-8 border-b border-white/10">
+          <div className="flex items-center gap-2 pb-4 mb-6 border-b border-white/10">
             <div className="w-2.5 h-2.5 rounded-full bg-[var(--accent)]" />
             <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
             <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
@@ -46,7 +46,7 @@ function Skills() {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {skillsData.map((category, index) => (
               <div

@@ -38,7 +38,7 @@ function Navbar() {
         >
           <a
             href="#journey"
-            className="hover:text-[var(--accent)] transition-colors duration-300"
+            className="hover:text-[var(--accent)] transition-colors duration-300 "
           >
             Journey
           </a>

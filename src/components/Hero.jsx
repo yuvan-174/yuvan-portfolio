@@ -26,7 +26,7 @@ const fadeRight = {
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24">
-      <div/>
+      <div />
 
       <motion.div
         className="max-w-7xl mx-auto px-6 w-full relative z-10"
@@ -50,7 +50,7 @@ function Hero() {
             }}
             className="text-center lg:text-left"
           >
-            <p className="text-lg md:text-xl tracking-[0.2em] uppercase text-[var(--accent)] mb-4">
+            <p className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-[var(--accent)] mb-4">
               Aspiring Software Developer
             </p>
 
@@ -59,38 +59,46 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-[#F7EDF0]/80 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10">
-              I am a computer science student building modern web applications and exploring the systems beneath them. I focus on bridging clean front-end interfaces with robust backend logic.
+              I am a computer science student building modern web applications
+              and exploring the systems beneath them. I focus on bridging clean
+              front-end interfaces with robust backend logic.
             </p>
 
             <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start">
               <button
                 className="
+                  group
+                  flex items-center gap-2
                   px-8 py-3
                   rounded-lg
                   border border-[var(--accent)]
-                  transition-all duration-300
+                  text-[var(--text)]
+                  transition-all duration-300 ease-out
                   hover:bg-[var(--accent)]
+                  hover:text-[var(--background)]
                   hover:-translate-y-1
-                "
-              >
-                View Projects 🡪
+                  hover:shadow-[0_8px_20px_rgba(163,112,62,0.25)]
+                ">
+                <span className="font-medium">View Projects</span>
+                <span className="transition-transform duration-300 ease-out group-hover:translate-x-1">
+                  🡪
+                </span>
               </button>
 
-              <motion.button
-                whileTap={{
-                  scale: 0.98,
-                }}
+              <motion.a
+                href="#contact"
+                whileTap={{ scale: 0.98 }}
                 className="
                   px-8 py-3
                   rounded-lg
                   border border-[var(--accent)]
-                  transition-all duration-300
-                  hover:bg-[var(--accent)]
-                  hover:-translate-y-1
-                "
-              >
+                  text-[var(--text)]/70 
+                  transition-all duration-300 ease-out
+                  hover:text-[var(--accent)]
+                  hover:bg-[var(--accent)]/10
+                ">
                 Contact Me
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 
